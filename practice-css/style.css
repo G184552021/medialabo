@@ -7,13 +7,14 @@ html {
 
 body {
   width: 80em;
-  margin: 0 auto;
+  margin: -10px;
 }
 
 /* Typography */
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
+
 }
 
 h2 {
@@ -35,7 +36,7 @@ header, footer {
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 0px;
 }
 
 h1 {
@@ -55,5 +56,5 @@ main p, main li {
 
 img {
   float: right
-  margin: 1.2em 2em;
+  margin: 2em;
 }
