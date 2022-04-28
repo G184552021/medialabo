@@ -8,7 +8,7 @@ html {
 body {
   font-size: 12px;
   width: 80em;
-  margin: 10px;
+  margin: 5px;
 }
 
 /* Typography */
@@ -32,23 +32,25 @@ p,li {
 
 header, footer {
   height: 10em;
-  padding: 2em;
+  padding: 0em;
   background-color: #14756c;
 }
 
 h1, footer p {
-  margin: 0px;
+  margin: auto;
 }
 
 h1 {
   text-align: center;
-  padding: 0.5em 0;
+  padding: 1em 0;
+  margin: auto;
 }
 
 /* main content */
 
 main {
   padding: 5em;
+  padding-top: -10em;
 }
 
 main p, main li {
