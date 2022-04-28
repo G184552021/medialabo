@@ -6,9 +6,9 @@ html {
 }
 
 body {
-  font-size: 10px;
+  font-size: 12px;
   width: 80em;
-  margin: -10px;
+  margin: 10px;
 }
 
 /* Typography */
@@ -22,7 +22,7 @@ h2 {
   font-size: 3.2em;
 }
 
-pli {
+p,li {
   font-size: 1.7em;
 }
 
@@ -48,7 +48,7 @@ h1 {
 /* main content */
 
 main {
-  padding: 2em;
+  padding: 5em;
 }
 
 main p, main li {
@@ -56,5 +56,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
+  margin: 10px;
 }
