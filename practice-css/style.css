@@ -30,9 +30,9 @@ pli {
 /* header and footer */
 
 header, footer {
-  background-colour: #14756c;
   height: 10em;
   padding: 2em;
+  background-colour: #14756c;
 }
 
 h1, footer p {
