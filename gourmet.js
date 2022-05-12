@@ -200,4 +200,6 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-
+for (let n of shop){
+  console(n.name);
+}
