@@ -200,6 +200,6 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-for (let n of shop){
-  console(n.name);
-}
+
+console.log('グルメ情報: 店舗名 (' + data.results.shop[0].name + ')');
+console.log('グルメ情報: 店舗名 (' + data.results.shop[1].name + ')');
