@@ -24,10 +24,13 @@ function hantei() {
     kaisu = kaisu + 1;
 
     let a, b;
-    b = document.
+    b = document.querySelector('div#placeholder');
     a.textContent='kaisu'+'回目の予想:' + 'yoso';
-    insertAdjacentElement
+    ainsertAdjacentElement('beforeend', );
 
+
+
+//答えの判定
     if (kaisu >= 4) {
         a.textContent = '答えは '+ kotae +' でした．すでにゲームは終わっています';
     } else {
@@ -42,4 +45,11 @@ function hantei() {
         }
     } 
     
+
+
+    
 }
+
+
+
+
