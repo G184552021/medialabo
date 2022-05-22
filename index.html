@@ -174,7 +174,7 @@
 
         <p>Firefox で practice-js/obj-practice.hyml を開いたときにコンソールに次の出力があれば OK です.</p>
 
-        <><strong>オブジェクトのファイル名: <a href="practice-js/obj-practice.html">practice-js/obj-practice.html</strong></a></p>
+        <p><strong>オブジェクトのファイル名: <a href="practice-js/obj-practice.html">practice-js/obj-practice.html</strong></a></p>
 
         
         <h4>課題3-1: 数当てゲームの作成 (その1)</h4>
@@ -250,23 +250,166 @@
 
         <h3>第4回 フォームとイベント処理</h3>
 
-        練習問題4-6
-        新しい JavaScript プログラムを作成して. HTML に組み込んでください.
+        <h4>練習問題4-6: プログラムを組み込む</h4>
 
-        practice-dom/dom-demo.js を新規作成します
-        このファイルに，一つ前の演習でやった大陸のリストを7つに変更するプログラムを記述します
-        このプログラムを，HTML ファイル practice-dom/dom-demo.html に組み込みます
-        前回の資料 が参考になるでしょう
+        <p>新しい JavaScript プログラムを作成して. HTML に組み込んでください.</p>
 
-        練習問題4-7
-        練習問題4-9
-        練習問題4-11
-        練習問題4-12
-        課題4-1
-        課題4-2
-        課題4-3
+        <ol>
+            <li>practice-dom/dom-demo.js を新規作成します</li>
+            <li>このファイルに. 一つ前の演習でやった大陸のリストを7つに変更するプログラムを記述します</li>
+            <li>
+                このプログラムを. HTML ファイル practice-dom/dom-demo.html に組み込みます
+                <ul><li>前回の資料 が参考になるでしょう</li></ul>
+            </li>
+            <li>Firefox でページを再読み込みします</li>
+        </ol>
+        <p>
+            再読み込み後はコンソールで実行していたプログラムはすべて無効になります．
+            結果, 大陸のリストだけが7つに変更されるはずです.
+        </p>
+
+        <h4>練習問題4-7: 7大洋のリストを追加する</h4>
+
+        <p>
+            practice-dom/dom-demo.js の最後に次のプログラムを追加してから，
+            空欄を埋めてプログラムを完成させましょう．
+            <br><br>ページを再読み込みすると, 次のように7大洋のリストが追加表示されます.
+        </p>
+
+        <h4>練習問題4-9: すべての h2 要素の背景色を変更する</h4>
+
+        <p>
+            今度はプログラムファイル practice-dom/dom-demo.js に
+            次の処理をするプログラムを書き足してください.
+        </p>
+
+        <p>
+            プログラムを完成させて，
+            ぺージを再読み込みすると次のように見出し文字の背景が緑色に変わります.
+        </p>
+
+        <p><strong>完成したファイル名: <a href="practice-dom/dom-demo.html">practice-dom/dom-demo.html</a></strong></p>
+
+        <h4>練習問題4-11: プレースホルダーとしての div 要素と span 要素</h4>
+
+        以下の手順で, div 要素と span 要素を「プレースホルダー」として使っていることを確認してください.
+
+        <ol>
+            <li>Visual Studio Code で 上記2つのファイルを開いて, 内容を確認しましょう．</li>
+            <ul>
+                <li>
+                    画像ファイル taro.png は2つのファイルとともに practice-dom に配置しています．
+                    フォルダにこのファイルがあることも確認しましょう
+                </li>
+            </ul>
+            <li>Firefox で practice-dom/div-span-demo1.html を開いてプログラムの実行結果を確認しましょう</li>
+            <li>Visual Studio Code で practice-dom-div-span-demo1.js を開きましょう</li>
+            <ul>
+                <li>1行目と2行目の画像ファイル名と名前を次のように変更してページを再読み込みしましょう</li>
+                <ul>
+                    <li>face: jiro.png</li>
+                    <li>name: 高尾二郎</li>
+                </ul>
+                <li>顔写真と名前が変わり，他の部分は変わらないはずです</li>
+            </ul>
+            <li>同様に，画像ファイル名と名前を次のように変更しましょう</li>
+            <ul>
+                <ul>
+                    <li>face: hanako.png</li>
+                    <li>name: 茗荷谷花子（みょうがだにはなこ）</li>
+                </ul>
+            </ul>
+        </ol>
+        <p><strong>変更したファイル名:<a href="practice-dom/div-span-demo1.html "> practice-dom/div-span-demo1.html</a></strong></p> 
+
+        <h4>練習問題4-12: 写真表</h4>
+
+        <ol>
+            <li>Visual Studio Code で 2つのファイルを開いて内容を確認します.</li>
+            <li>Firefox で practice-dom/div-demo2.html を開いてみましょう．</li>
+            <li>Firefox のウェブ開発ツールを開き，インスペクタにおいて HTML の要素を確認します</li>
+            <ul><li>プログラムによって作られた div 要素が確認できると思います</li></ul>
+            <li>見栄えを良くしましょう</li>
+            <ul>
+                <li>Visual Studio Code で practice-dom/div-demo2.html を編集します</li>
+                <li>div-demo2.css を HTML に組み込んでください</li>
+                <li>この CSS は div#placeholder を 2x2 のグリッドレイアウトで表示する設定です</li>
+            </ul>
+            <li>Firefox でページを再読み込みします</li>
+        </ol>
+
+        <p><strong>要素確認したファイル名:<a href="practice-dom/div-demo2.html"> practice-dom/div-demo2.html</a></strong></p>
+
+        <h4>課題4-1: 数当てゲームのページを改良する</h4>
+
+        <p>数当てゲームの結果をコンソールではなく，ページに表示するように修正しましょう．</p>
+        <ul>
+            <li>kazuate.html には，結果表示のためのプレースホルダーを追加すると良いです</li>
+            <li>kazuate.js では出力先をコンソールではなく, HTML にします</li>
+            <ul>
+                <li>判定結果のため, p#result 要素をプレースホルダーとして使用します</li>
+                <li>p#result 要素の1つ前の p 要素に「◯回目の予想: △」を出力します </li>
+                <ul>
+                    <li>◯ と △ のプレースホルダーとして, 2つの span 要素を p要素の中に置きましょう（もともとあったテキストの「1」と「4」は削除します</li>
+                </ul>
+            </ul>
+            <li>実行すると, 次の2行をページに表示するはずです</li>
+            <p id="kazuate.yoso1">
+                4回目の予想: 4
+                <br>答えは ◯ でした．すでにゲームは終わっています
+            </p>
+            <li>kazuate.js の関数 hantei() の呼び出し回数を4回から1回に減らしてみましょう.今度は次のいずれかをページに表示するはずです.</li>
+            <ul><li>正解の場合:</li></ul>
+            <p id="kazuate.yoso2"> 
+                1回目の予想: 4
+                <br>正解です.おめでとう!
+            </p>
+            <ul><li>まちがった場合:</li></ul>
+            <p id="kazuate.yoso3">
+                1回目の予想: 4
+                <br>まちがい．答えはもっと大きいですよ（または小さいですよ）
+            </p>
+        </ul>
+
+        <p><strong>数あてゲームのファイル名:<a href="kazuate.html">kazuate.html</a></strong></p>
+
+
+        <h4>課題4-2: オブジェクトをページ上に表示する（プロジェクト課題）</h4>
+
+        <p>前回の課題3-2で作った JavaScript プログラムを改良して，ページ上にデータを表示しましょう．</p>
+
+        <ul>
+            <li>project.html に次の修正を加えます</li>
+            <ul>
+                <li>前回作った JavaScript プログラムを組み込む</li>
+                <li>HTML ファイルの中でデータ項目を表示する要素をプレースホルダーに変更する</li>
+            </ul>
+            <li>project.js の表示先をコンソールから HTML に変更します</li>
+        </ul>
+
+        <h4>課題4-3: index.html を編集しよう</h4>
+
+        <p>medialabo/index.html はこのテーマのレポートの代わりになるものです．今回は次の事柄を記載しましょう．</p>
+        <ul>
+            <li>
+                第1回から第4回に学習した事柄を記述します.
+                このテーマの成績の 50% は，各回の最初の段落に記載する学習事項で決まりますので，
+                この部分の説明を充実させてください．
+            </li>
+            <li>第4回の成果物として, 次の8つの見出しと説明文を書きましょう.</li>
+            <ul>
+                <li>練習問題4-6</li>
+                <li>練習問題4-7</li>
+                <li>練習問題4-9 （practice-dom/dom-demo.html へのリンクも設置すること）</li>
+                <li>練習問題4-11 （practice-dom/div-span-demo1.html へのリンクも設置すること）</li>
+                <li>練習問題4-12 （practice-dom/div-demo2.html へのリンクも設置すること）</li>
+                <li>課題4-1 （kazuate.html へのリンクも設置すること）</li>
+                <li>課題4-2</li>
+                <li>課題4-3</li>
+            </ul>
+        </ul>
         <h3>第5回 Webページの動的な編集</h3>
-        <h3>第6回 Webページ作演習</h3>
+        <h3>第6回 Webページ作成演習</h3>
 
 
         <nav>
