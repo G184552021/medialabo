@@ -203,3 +203,11 @@ let data = {
 
 console.log('グルメ情報: 店舗名 (' + data.results.shop[0].name + ')');
 console.log('グルメ情報: 店舗名 (' + data.results.shop[1].name + ')');
+
+
+
+////////////　課題4-2　div要素
+let aa = document.querySelector('span#shop.name1');
+aa.textContent = data.results.shop[0].name;
+let bb = document.querySelector('span#shop.name2');
+bb.textContent = data.results.shop[1].name;
