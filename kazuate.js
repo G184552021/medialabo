@@ -43,7 +43,7 @@ function hantei() {
             }   
         }
     } 
-    a.insertAdjacentElement('afterend',a);    
+    a.insertAdjacentElement('afterend',a);
 }
 
 
