@@ -211,3 +211,11 @@ let aa = document.querySelector('span#shop_name1');
 aa.textContent = data.results.shop[0].name;
 let bb = document.querySelector('span#shop_name2');
 bb.textContent = data.results.shop[1].name;
+
+
+
+
+let cc = document.querySelector('span#shop_name3');
+cc.textContent = data.results.shop[0].name;
+let dd = document.querySelector('span#shop_name4');
+dd.textContent = data.results.shop[1].name;
