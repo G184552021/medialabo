@@ -211,11 +211,55 @@ let aa = document.querySelector('span#shop_name1');
 aa.textContent = data.results.shop[0].name;
 let bb = document.querySelector('span#shop_name2');
 bb.textContent = data.results.shop[1].name;
-
-
-
-
 let cc = document.querySelector('span#shop_name3');
 cc.textContent = data.results.shop[0].name;
 let dd = document.querySelector('span#shop_name4');
 dd.textContent = data.results.shop[1].name;
+
+//課題6-1
+let b = document.querySelector('button#ken');
+b.addEventListener('click', sendRequest);
+
+
+function sendRequest() {
+  let kk = document.querySelector('#kensaku[name="kensaku"]');
+  let k = kk.value;
+
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ k +'.json';
+    axios.get(url)
+        .then(showResult)
+        .catch(showError)
+        .then(finish);
+}
+function showResult(resp) {
+    // サーバから送られてきたデータを出力
+    let data = resp.data;
+    // data が文字列型なら，オブジェクトに変換する
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+
+    // data をコンソールに出力
+    console.log(data);
+
+    //ここからデータを出力
+    let na = document.querySelector('div#na');
+    for(let i of data.results.shop){
+      na.textContent = "店舗名: " + Object.results.shop[i].name;
+      na.textContent = "営業時間" + Object.results.shop[i].open;
+    }
+
+
+    // data.x を出力
+    console.log(data.x);
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+    console.log(err);
+}
+
+// 通信の最後にいつも実行する処理
+function finish() {
+    console.log('Ajax 通信が終わりました');
+}

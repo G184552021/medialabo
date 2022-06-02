@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Projects</title>
     <link rel="stylesheet" href="TaKosan.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="gourmet.js" defer></script>
   </head>
 
@@ -13,81 +14,51 @@
 
     
     <label for="kensaku">ジャンル検索: </label>
-    <input type="search" name="kensaku" id="kensaku">
-    <button id="ken">検索</button>
-    
-    <ul>
-        <li>居酒屋</li>
-        <li>ダイニングバー・バル</li>
-        <li>創作料理</li>
-        <li>和食</li>
-        <li>洋食</li>
-        <li>イタリアン・フレンチ</li>
-        <li>中華</li>
-        <li>焼き肉・ホルモン</li>
-        <li>アジア・エスニック料理</li>
-        <li>各国料理</li>
-        <li>カラオケ・パーティ</li>
-        <li>バー・カクテル</li>
-        <li>ラーメン</li>
-        <li>カフェ・スイーツ</li>
-        <li>その他グルメ</li>
-        <li>お好み焼き・もんじゃ</li>
-        <li>韓国料理</li>
-    </ul>
+    <select name='kensaku' id="kensaku">
+      <option value="G001">居酒屋</option>
+      <option value="G002">ダイニングバー・バル</option>
+      <option value="G003">創作料理</option>
+      <option value="G004">和食</option>
+      <option value="G005">洋食</option>
+      <option value="G006">イタリアン・フレンチ</option>  
+      <option value="G007">中華</option>
+      <option value="G008">焼き肉・ホルモン</option>
+      <option value="G009">アジア・エスニック料理</option>
+      <option value="G010">各国料理</option>
+      <option value="G011">カラオケ・パーティ</option>
+      <option value="G012">バー・カクテル</option>
+      <opton value="G013">ラーメン</option>
+      <option value="G014">カフェ・スイーツ</option>
+      <option value="G016">お好み焼き・もんじゃ</option>
+      <option value="G017">韓国料理</option>
+      <option value="G015">その他グルメ</option>  
+    </slect>
 
-    
+    <select>
+      <button id="ken">検索</button>
+    </select>
+      
+  <br><br>
 
-    <h3>居酒屋</h3>
-
-    <table border="1">
-      <tr>
-        <th>店名</th>
-        <th>場所</th>
-        <th>予算</th>
-        <th>おすすめ度</th>
-      </tr>
-      <tr>
-        <td>味</td>
-        <td>東京都八王子市</td>
-        <td>～5999</td>
-        <td>★★★★★</td>
-      </tr>
-      <tr>
-        <td>箔ヨ</td>
-        <td>東京都八王子市</td>
-        <td>～7999</td>
-        <td>★★★</td>
-      </tr>
-
-    </table>
-
-    <h3>カフェ</h3>
-
-    <table border="2">
-      <tr>
-        <th>店名</th>
-        <th>場所</th>
-        <th>予算</th>
-        <th>おすすめ度</th>
-      </tr>
-      <tr>
-        <td>プスター</td>
-        <td>東京都日野市</td>
-        <td>～1999</td>
-        <td>★★★★</td>
-      </tr>
-      <tr>
-        <td>マちゃマちゃ</td>
-        <td>神奈川県相模原市</td>
-        <td>～1999</td>
-        <td>★★★★★</td>
-      </tr>
-
-      </table>
+  <div id="na"></div>
 
 
-    
+
+
+
+
+  店舗名
+  genre:object の catch
+  
+  予算
+
+  キャッチとちゃーたーとchild
+
+  access
+
+  shop_detail_memo
+
+
 
 
     <h3>居酒屋</h3>
@@ -113,10 +84,15 @@
       </tr>
 
     </table>
+
+
+
+
+
+  
     <p>グルメ情報: 店舗名  <span id="shop_name3"></span></p>
     <p>グルメ情報: 店舗名  <span id="shop_name4"></span></p>
 
     <label id="guru">グルメ情報： 店舗名  </label>
-    <input 
   </body>
 </html>
