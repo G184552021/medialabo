@@ -244,9 +244,15 @@ function showResult(resp) {
 
     //ここからデータを出力
     let na = document.querySelector('div#na');
-    for(let i of data.results.shop){
-      na.textContent = "店舗名: " + Object.results.shop[i].name;
-      na.textContent = "営業時間" + Object.results.shop[i].open;
+    for(let i of data.results){
+      na.textContent = "店舗名 : " + data.results.i.name;
+      console.log(na);
+      na.textContent = "営業日時 :" + data.results.i.open;
+      console.log(na);
+      na.textContent = "予算 : " + data.results.i.budget.name;
+      console.log(na);
+      na.textContent = "アクセス情報 : " + data.results.i.access;
+      console.log(na);
     }
 
 
