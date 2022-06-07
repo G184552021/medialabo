@@ -92,64 +92,76 @@ function showResult(resp) {
         let div = document.createElement('div');
         div.setAttribute('id','catch'+i);
         div.textContent = "～"+ data.results.shop[i].genre.catch +"～";
+        div.style.fontSize = '200%';
         p.insertAdjacentElement('beforeend',div);
 
         let div0 = document.createElement('div');
         div0.setAttribute('id','n'+i);
         div0.textContent = '店舗名 : ' + data.results.shop[i].name;
+        div0.style.fontSize = '150%';
         p.insertAdjacentElement('beforeend',div0);
 
         let span = document.createElement('span');
         span.setAttribute('id','yosan'+i);
         span.textContent = '予算';
+        span.style.fontSize = '120%';
         span.style.background = 'linear-gradient(transparent 70%, #a7d6ff 70%)';
         p.insertAdjacentElement('beforeend',span);
         let div1 = document.createElement('div');
         div1.setAttribute('id','yosan'+i);
         div1.textContent = data.results.shop[i].budget.name;
+        div1.style.fontSize = '110%';
         span.insertAdjacentElement('beforeend',div1);
 
         let span0 = document.createElement('span');
         span0.setAttribute('id','time'+i);
         span0.textContent = '営業日時';
+        span0.style.fontSize = '120%';
         span0.style.background = 'linear-gradient(transparent 70%, #a7d6ff 70%)';
         p.insertAdjacentElement('beforeend',span0);
         let div2 = document.createElement('div');
         div2.setAttribute('id','time'+i);
         div2.textContent = data.results.shop[i].open;
+        div2.style.fontSize = '110%';
         span0.insertAdjacentElement('beforeend',div2);
 
         if (data.results.shop[i].sub_genre.name) {
             let span1 = document.createElement('span');
             span1.setAttribute('id','genre'+i);
             span1.textContent = 'ジャンル';
+            span1.style.fontSize = '120%';
             span1.style.background = 'linear-gradient(transparent 70%, #a7d6ff 70%)';
             p.insertAdjacentElement('beforeend',span1);
             let div3 = document.createElement('div');
             div3.setAttribute('id','genre'+i);
             div3.textContent = data.results.shop[i].genre.name+' , '+data.results.shop[i].sub_genre.name;
+            div3.style.fontSize = '110%';
             span1.insertAdjacentElement('beforeend',div3);
         } else {
             let span1 = document.createElement('span');
             span1.setAttribute('id','genre'+i);
             span1.textContent = 'ジャンル';
+            span1.style.fontSize = '120%';
             span1.style.background = 'linear-gradient(transparent 70%, #a7d6ff 70%)';
             p.insertAdjacentElement('beforeend',span1);
             let div3 = document.createElement('div');
             div3.setAttribute('id','genre'+i);
             div3.textContent = data.results.shop[i].genre.name;
+            div3.style.fontSize = '110%';
             span1.insertAdjacentElement('beforeend',div3);
         }
 
         let span2 = document.createElement('span');
         span2.setAttribute('id','adress'+i);
         span2.textContent = '住所';
+        span2.style.fontSize = '120%';
         span2.style.background = 'linear-gradient(transparent 70%, #a7d6ff 70%)';
         p.insertAdjacentElement('beforeend',span2);
-        let div3 = document.createElement('div');
-        div3.setAttribute('id','adress'+i);
-        div3.textContent = data.results.shop[i].address;
-        span2.insertAdjacentElement('beforeend',div3);
+        let div4 = document.createElement('div');
+        div4.setAttribute('id','adress'+i);
+        div4.textContent = data.results.shop[i].address;
+        div4.style.fontSize = '110%';
+        span2.insertAdjacentElement('beforeend',div4);
     }
 
     // data.x を出力

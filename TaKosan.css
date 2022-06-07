@@ -7,5 +7,18 @@ h1 {
     color: aliceblue;
     text-align: center;
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
-    font-size: 300%;
+    font-size: 350%;
 }
+
+select {
+    background: #cfcedb;
+    height: 40px;
+    width: 300px;
+}
+
+button {
+    font-size: 90%;
+    height: 40px;
+    width: 50px;
+}
+
