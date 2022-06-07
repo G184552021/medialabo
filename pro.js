@@ -170,6 +170,17 @@ function showResult(resp) {
     time3.textContent = '営業日時';
     let dtime3 = document.querySelector('div#time3');
     dtime3.textContent = data.results.shop[3].open;
+    if (data.results.shop[3].sub_genre.name === null) {
+        let genre3 = document.querySelector('span#genre3');
+        genre3.textContent = 'ジャンル';
+        let dgenre3 = document.querySelector('div#genre3');
+        dgenre3.textContent = data.results.shop[3].genre.name;
+    } else {
+        let genre3 = document.querySelector('span#genre3');
+    genre3.textContent = 'ジャンル';
+    let dgenre3 = document.querySelector('div#genre3');
+    dgenre3.textContent = data.results.shop[3].genre.name + ' , ' +data.results.shop[3].sub_genre.name;
+    }
     let genre3 = document.querySelector('span#genre3');
     genre3.textContent = 'ジャンル';
     let dgenre3 = document.querySelector('div#genre3');
@@ -192,14 +203,22 @@ function showResult(resp) {
     time4.textContent = '営業日時';
     let dtime4 = document.querySelector('div#time4');
     dtime4.textContent = data.results.shop[4].open;
-    let genre4 = document.querySelector('span#genre4');
-    genre4.textContent = 'ジャンル';
-    let dgenre4 = document.querySelector('div#genre4');
-    dgenre4.textContent = data.results.shop[4].genre.name + ' , ' +data.results.shop[4].sub_genre.name;
+    if (data.results.shop[4].sub_genre.name === null) {
+        let genre4 = document.querySelector('span#genre4');
+        genre4.textContent = 'ジャンル';
+        let dgenre4 = document.querySelector('div#genre4');
+        dgenre4.textContent = data.results.shop[4].genre.name;
+    } else {
+        let genre4 = document.querySelector('span#genre4');
+        genre4.textContent = 'ジャンル';
+        let dgenre4 = document.querySelector('div#genre4');
+        dgenre4.textContent = data.results.shop[4].genre.name + ' , ' +data.results.shop[4].sub_genre.name;
+    }
     let add4 = document.querySelector('span#add4');
     add4.textContent = '住所';
     let dadd4 = document.querySelector('div#add4');
     dadd4.textContent = data.results.shop[4].address;
+
     //配列 5
     let catch5 = document.querySelector('div#catch5');
     catch5.textContent = "～"+ data.results.shop[5].genre.catch +"～";
@@ -214,14 +233,23 @@ function showResult(resp) {
     time5.textContent = '営業日時';
     let dtime5 = document.querySelector('div#time5');
     dtime5.textContent = data.results.shop[5].open;
-    let genre5 = document.querySelector('span#genre5');
-    genre5.textContent = 'ジャンル';
-    let dgenre5 = document.querySelector('div#genre5');
-    dgenre5.textContent = data.results.shop[5].genre.name + ' , ' +data.results.shop[5].sub_genre.name;
+    if (data.results.shop[5].sub_genre.name === null) {
+        let genre5 = document.querySelector('span#genre5');
+        genre5.textContent = 'ジャンル';
+        let dgenre5 = document.querySelector('div#genre5');
+        dgenre5.textContent = data.results.shop[5].genre.name;
+    } else {
+        let genre5 = document.querySelector('span#genre5');
+        genre5.textContent = 'ジャンル';
+        let dgenre5 = document.querySelector('div#genre5');
+        dgenre5.textContent = data.results.shop[5].genre.name + ' , ' +data.results.shop[5].sub_genre.name;
+    }
+    
     let add5 = document.querySelector('span#add5');
     add5.textContent = '住所';
     let dadd5 = document.querySelector('div#add5');
     dadd5.textContent = data.results.shop[5].address;
+
     //配列 6
     let catch6 = document.querySelector('div#catch6');
     catch6.textContent = "～"+ data.results.shop[6].genre.catch +"～";
@@ -236,14 +264,22 @@ function showResult(resp) {
     time6.textContent = '営業日時';
     let dtime6 = document.querySelector('div#time6');
     dtime6.textContent = data.results.shop[6].open;
-    let genre6 = document.querySelector('span#genre6');
-    genre6.textContent = 'ジャンル';
-    let dgenre6 = document.querySelector('div#genre6');
-    dgenre6.textContent = data.results.shop[6].genre.name + ' , ' +data.results.shop[6].sub_genre.name;
+    if (data.results.shop[6].sub_genre.name === null) {
+        let genre6 = document.querySelector('span#genre6');
+        genre6.textContent = 'ジャンル';
+        let dgenre6 = document.querySelector('div#genre6');
+        dgenre6.textContent = data.results.shop[6].genre.name;
+    } else {
+        let genre6 = document.querySelector('span#genre6');
+        genre6.textContent = 'ジャンル';
+        let dgenre6 = document.querySelector('div#genre6');
+        dgenre6.textContent = data.results.shop[6].genre.name + ' , ' +data.results.shop[6].sub_genre.name;
+    }
     let add6 = document.querySelector('span#add6');
     add6.textContent = '住所';
     let dadd6 = document.querySelector('div#add6');
     dadd6.textContent = data.results.shop[6].address;
+
     //配列 7
     let catch7 = document.querySelector('div#catch7');
     catch7.textContent = "～"+ data.results.shop[7].genre.catch +"～";
@@ -258,10 +294,18 @@ function showResult(resp) {
     time7.textContent = '営業日時';
     let dtime7 = document.querySelector('div#time7');
     dtime7.textContent = data.results.shop[7].open;
-    let genre7 = document.querySelector('span#genre7');
-    genre7.textContent = 'ジャンル';
-    let dgenre7 = document.querySelector('div#genre7');
-    dgenre7.textContent = data.results.shop[7].genre.name + ' , ' +data.results.shop[7].sub_genre.name;
+    if (data.results.shop[7].sub_genre.name === null) {
+        let genre7 = document.querySelector('span#genre7');
+        genre7.textContent = 'ジャンル';
+        let dgenre7 = document.querySelector('div#genre7');
+        dgenre7.textContent = data.results.shop[7].genre.name;
+    } else {
+        let genre7 = document.querySelector('span#genre7');
+        genre7.textContent = 'ジャンル';
+        let dgenre7 = document.querySelector('div#genre7');
+        dgenre7.textContent = data.results.shop[7].genre.name + ' , ' +data.results.shop[7].sub_genre.name;
+    }
+    
     let add7 = document.querySelector('span#add7');
     add7.textContent = '住所';
     let dadd7 = document.querySelector('div#add7');
@@ -280,10 +324,18 @@ function showResult(resp) {
     time8.textContent = '営業日時';
     let dtime8 = document.querySelector('div#time8');
     dtime8.textContent = data.results.shop[8].open;
-    let genre8 = document.querySelector('span#genre8');
-    genre8.textContent = 'ジャンル';
-    let dgenre8 = document.querySelector('div#genre8');
-    dgenre8.textContent = data.results.shop[8].genre.name + ' , ' +data.results.shop[8].sub_genre.name;
+    if (data.results.shop[8].sub_genre.name === null) {
+        let genre8 = document.querySelector('span#genre8');
+        genre8.textContent = 'ジャンル';
+        let dgenre8 = document.querySelector('div#genre8');
+        dgenre8.textContent = data.results.shop[8].genre.name;
+    } else {
+        let genre8 = document.querySelector('span#genre8');
+        genre8.textContent = 'ジャンル';
+        let dgenre8 = document.querySelector('div#genre8');
+        dgenre8.textContent = data.results.shop[8].genre.name + ' , ' +data.results.shop[8].sub_genre.name;
+    }
+    
     let add8 = document.querySelector('span#add8');
     add8.textContent = '住所';
     let dadd8 = document.querySelector('div#add8');
@@ -302,10 +354,18 @@ function showResult(resp) {
     time9.textContent = '営業日時';
     let dtime9 = document.querySelector('div#time9');
     dtime9.textContent = data.results.shop[9].open;
-    let genre9 = document.querySelector('span#genre9');
-    genre9.textContent = 'ジャンル';
-    let dgenre9 = document.querySelector('div#genre9');
-    dgenre9.textContent = data.results.shop[9].genre.name + ' , ' +data.results.shop[9].sub_genre.name;
+    if (data.results.shop[9].sub_genre.name === null) {
+        let genre9 = document.querySelector('span#genre9');
+        genre9.textContent = 'ジャンル';
+        let dgenre9 = document.querySelector('div#genre9');
+        dgenre9.textContent = data.results.shop[9].genre.name;
+    } else {
+        let genre9 = document.querySelector('span#genre9');
+        genre9.textContent = 'ジャンル';
+        let dgenre9 = document.querySelector('div#genre9');
+        dgenre9.textContent = data.results.shop[9].genre.name + ' , ' +data.results.shop[9].sub_genre.name;
+    }
+    
     let add9 = document.querySelector('span#add9');
     add9.textContent = '住所';
     let dadd9 = document.querySelector('div#add9');
