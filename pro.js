@@ -142,7 +142,7 @@ function showResult(resp) {
     time2.textContent = '営業日時';
     let dtime2 = document.querySelector('div#time2');
     dtime2.textContent = data.results.shop[2].open;
-    if (data.results.shop[2].sub_genre.name === null) {
+    if (data.results.shop[2].isArray(sub_genre.name)) {
         let genre2 = document.querySelector('span#genre2');
         genre2.textContent = 'ジャンル';
         let dgenre2 = document.querySelector('div#genre1');
