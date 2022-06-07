@@ -8,7 +8,11 @@ function sendRequest() {
   let k = kk.value;
   //背景出力
   let color = 'rgba(213, 233, 250, 0.778)'
-  let div = document.querySelector('div#css0');
+  for (let i=0; i<10; i++) {
+    let div = document.querySelector('div#css'+i);
+    div.style.backgroundColor = color;
+  }
+  /*let div = document.querySelector('div#css0');
   div.style.backgroundColor = color;
   let div1 = document.querySelector('div#css1');
   div1.style.backgroundColor = color;
@@ -28,7 +32,7 @@ function sendRequest() {
   div8.style.backgroundColor = color;
   let div9 = document.querySelector('div#css9');
   div9.style.backgroundColor = color;
-  
+  */
 
 
 
@@ -50,20 +54,39 @@ function showResult(resp) {
     console.log(data);
 
     //ここからデータを出力
-    /*for (let i=0; i<data.results.shop.length; i++) {
-        let (catch + i) = document.querySelector('div#catch0');
-        (catch+i).textContent = "～"+ data.results.shop[i].genre.catch +"～";
-    }
-    //配列にデータを格納
-    let o = new Array(data.results.shop.length);
-    let count = 0;
-    for(let i=0; i<o.length; i++){
-        if (count === ) {
+    for (let i=0; i<data.results.shop.length; i++) {
+        let catch0 = document.querySelector('div#catch'+i);
+        catch0.textContent = "～"+ data.results.shop[i].genre.catch +"～";
+        let na = document.querySelector('div#n'+i);
+        na.textContent = '店舗名 : ' + data.results.shop[i].name;
+        let yosan0 = document.querySelector('span#yosan'+i);
+        yosan0.textContent = '予算';
+        let dyosan0 = document.querySelector('div#yosan'+i);
+        dyosan0.textContent = data.results.shop[i].budget.name;
+        let time0 = document.querySelector('span#time'+i);
+        time0.textContent = '営業日時';
+        let dtime0 = document.querySelector('div#time'+i);
+        dtime0.textContent = data.results.shop[i].open;
 
+        if (data.results.shop[i].sub_genre.name) {
+            let genre0 = document.querySelector('span#genre'+i);
+            genre0.textContent = 'ジャンル';
+            let dgenre0 = document.querySelector('div#genre'+i);
+            dgenre0.textContent = data.results.shop[i].genre.name + ' , ' +data.results.shop[i].sub_genre.name;
+        } else {
+            let genre0 = document.querySelector('span#genre'+i);
+            genre0.textContent = 'ジャンル';
+            let dgenre0 = document.querySelector('div#genre'+i);
+            dgenre0.textContent = data.results.shop[i].genre.name;
         }
-    }*/
+
+        let add0 = document.querySelector('span#add'+i);
+        add0.textContent = '住所';
+        let dadd0 = document.querySelector('div#add'+i);
+        dadd0.textContent = data.results.shop[i].address;
+    }
     //配列　0
-    let catch0 = document.querySelector('div#catch0');
+    /*let catch0 = document.querySelector('div#catch0');
     catch0.textContent = "～"+ data.results.shop[0].genre.catch +"～";
     let na = document.querySelector('div#na');
     na.textContent = '店舗名 : ' + data.results.shop[0].name;
@@ -369,7 +392,7 @@ function showResult(resp) {
     let add9 = document.querySelector('span#add9');
     add9.textContent = '住所';
     let dadd9 = document.querySelector('div#add9');
-    dadd9.textContent = data.results.shop[9].address;
+    dadd9.textContent = data.results.shop[9].address;*/
 
 
 
