@@ -125,7 +125,7 @@ function showResult(resp) {
         div2.style.fontSize = '110%';
         span0.insertAdjacentElement('beforeend',div2);
 
-        if (data.results.shop[i].sub_genre.name) {
+        if (data.results.shop[i].sub_genre && data.results.shop[i].sub_genre.name) {
             let span1 = document.createElement('span');
             span1.setAttribute('id','genre'+i);
             span1.textContent = 'ジャンル';
